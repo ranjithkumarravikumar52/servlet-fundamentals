@@ -30,6 +30,10 @@
 #### Git flow
 * Following gitflow workflow from this [article](https://nvie.com/posts/a-successful-git-branching-model/)
 
+#### IntelliJ Hacks
+* [How to add external jar files to the project](https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project)
+    * Just copy-paste the .jar under the libs folder, right click on it and select 'Add as library' option from the list. It will do the rest.
+
 #### Tutorials
 * Architecture overview for Java EE 8 applications [here](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)
 * What is a session? Types of sessions? Read this [blog](https://machinesaredigging.com/2013/10/29/how-does-a-web-session-work/) 

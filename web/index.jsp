@@ -1,3 +1,4 @@
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <html>
 <body>
     <jsp:include page="my-header.html" />
@@ -15,6 +16,8 @@
         <a href="cookies-homepage.jsp" align="center">Cookies Demo</a>
     </div>
     <jsp:include page="my-footer.jsp" />
+    <c:set var="stuff" value="<%= new java.util.Date()%>" />
+    Time on the server (Using JSTL) -  ${stuff}
 
 </body>
 </html>
