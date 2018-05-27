@@ -52,5 +52,13 @@
         </tr>
         </c:forEach>
     </table>
+    Display students from the city: Hyderabad<br/><br/>
+    <c:forEach var="studentVar" items="${studentList}">
+        <c:if test="${studentVar.city.contentEquals('hyd')}">
+            ${studentVar.firstName},
+            ${studentVar.lastName}
+        </c:if>
+        <br/>
+    </c:forEach>
 </body>
 </html>
