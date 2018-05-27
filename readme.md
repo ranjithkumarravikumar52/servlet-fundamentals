@@ -17,3 +17,7 @@
 * Reading Form Data with JSP
 * Building drop-down list
 * Read data from drop-down list
+* Building radio form list
+* Read data from radio form
+* Building check-box form
+* Read data from check-box
