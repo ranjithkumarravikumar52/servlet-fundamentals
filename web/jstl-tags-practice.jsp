@@ -1,3 +1,6 @@
+<%@ page import="com.jsppractice.Student" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core_1_1" %>
 <%--
   Created by IntelliJ IDEA.
@@ -17,8 +20,37 @@
         String[] cities = {"Mumbai", "Delhi", "Calcutta"};
         pageContext.setAttribute("citiesList", cities);
     %>
+    For each implementation<br/><br/>
     <c:forEach var="tempCity" items="${citiesList}">
         ${tempCity}<br/>
     </c:forEach>
+
+    <%
+        //creating multiple objects of student class
+        List<Student> studentList = new ArrayList<>();
+        studentList.add(new Student("ranjith", "kumar", "hyd"));
+        studentList.add(new Student("Jon", "Doe", "us"));
+        studentList.add(new Student("Mary", "Jane", "hyd"));
+        pageContext.setAttribute("studentList", studentList);
+    %>
+    <table border="1">
+        <tr>
+            <th>
+                FirstName
+            </th><th>
+                LastName
+            </th>
+            <th>
+                City
+            </th>
+        </tr>
+        <c:forEach var="studentVar" items="${studentList}">
+        <tr>
+            <td>${studentVar.firstName}</td>
+            <td>${studentVar.lastName}</td>
+            <td>${studentVar.city}</td>
+        </tr>
+        </c:forEach>
+    </table>
 </body>
 </html>
