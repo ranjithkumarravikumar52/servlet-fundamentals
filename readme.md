@@ -25,7 +25,12 @@
 #### Branch: State Management with JSP
 * Session Tracking with JSP
 * Session object always kept in Tomcat's memory
-* More session object information [here](https://tomcat.apache.org/tomcat-5.5-doc/servletapi/javax/servlet/http/HttpSession.html)
+* More session object information [here](https://tomcat.apache.org/tomcat-5.5-doc/servletapi/javax/servlet/http/HttpSession.html) 
+
+#### Branch: JSP Tags
+* JSTL tags
+* Custom tags
+* Every page that uses tags should include the link to uri even for an include page
 
 #### Git flow
 * Following gitflow workflow from this [article](https://nvie.com/posts/a-successful-git-branching-model/)
