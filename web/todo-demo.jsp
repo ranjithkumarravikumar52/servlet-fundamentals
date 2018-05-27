@@ -6,27 +6,38 @@
     <title>Todo-demo</title>
 </head>
 <body>
-    <form action="todo-demo.jsp" method="post">
-        Add new Item: <input type="text" name="newItem"/>
-        <input type="submit" value="Add new Item">
-    </form>
-    <hr>
-    <b>Todo List Items: </b>
-    <ol>
-        <%
-            //create a collection to add newItems into it
-            List<String> itemList = new ArrayList<>();
+<form action="todo-demo.jsp" method="post">
+    Add new Item: <input type="text" name="newItem"/>
+    <input type="submit" value="Add new Item">
+</form>
+<hr>
+<b>Todo List Items: </b>
+<ol>
+    <%
+        /**
+         * session objects are automatically passed by the client and the server
+         * All we got to do is get the session id and downcast the object to List
+         */
+        List<String> itemList = (List<String>) session.getAttribute("mySessionObject");
+        if (itemList == null) {
+            itemList = new ArrayList<>();
+            session.setAttribute("mySessionObject", itemList);
+        }
 
-            //add item into the list
-            itemList.add(request.getParameter("newItem"));
+        //see if there is form data to add
+        String theItem = request.getParameter("newItem");
+        if (theItem != null) {
+            itemList.add(theItem);
+        }
 
-            //print everything
-            for(String itemIndex: itemList){
-                out.println("<li>"+itemIndex+"</li>");
-            }
+        //display the items from the list
+        for (String temp : itemList) {
+            out.println("<li>" + temp + "</li>");
+        }
 
-        %>
-    </ol>
+
+    %>
+</ol>
 
 
 </body>
