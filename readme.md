@@ -27,6 +27,8 @@
 * Session object always kept in Tomcat's memory
 * More session object information [here](https://tomcat.apache.org/tomcat-5.5-doc/servletapi/javax/servlet/http/HttpSession.html)
 
+#### Git flow
+* Following gitflow workflow from this [article](https://nvie.com/posts/a-successful-git-branching-model/)
 
 #### Tutorials
 * Architecture overview for Java EE 8 applications [here](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)
