@@ -12,6 +12,7 @@
     <div align="center">
         <h3 align="center">State Management with JSP</h3>
         <a href="todo-demo.jsp" align="center">User session Management Demo</a>
+        <a href="cookies-homepage.jsp" align="center">Cookies Demo</a>
     </div>
     <jsp:include page="my-footer.jsp" />
 
