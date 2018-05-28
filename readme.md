@@ -38,6 +38,13 @@
     * choose
         * when
         * otherwise
+#### Branch: Function Tags
+* length
+* lowercase
+* upperCase
+* endsWith
+* split
+* join
     
     
 

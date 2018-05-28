@@ -18,8 +18,14 @@
     </div>
 
     <div align="center">
-        <h3 align="center">JSP Tags</h3>
+        <h3 align="center">JSP core Tags</h3>
         <a href="jstl-tags-practice.jsp">For-each demo</a>
+    </div>
+
+    <div align="center">
+        <h3 align="center">JSP Function Tags</h3>
+        <a href="function-tags-practice.jsp">Function Tags Demo</a>
+
     </div>
 
     <jsp:include page="my-footer.jsp" />
