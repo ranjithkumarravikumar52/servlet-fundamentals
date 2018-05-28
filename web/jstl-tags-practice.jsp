@@ -31,6 +31,7 @@
         studentList.add(new Student("ranjith", "kumar", "hyd"));
         studentList.add(new Student("Jon", "Doe", "us"));
         studentList.add(new Student("Mary", "Jane", "hyd"));
+        studentList.add(new Student("Wot", "Up", "boston"));
         pageContext.setAttribute("studentList", studentList);
     %>
     <table border="1">
@@ -52,6 +53,9 @@
         </tr>
         </c:forEach>
     </table>
+    <br/><br/>
+    
+    <!-- practice if condition -->
     Display students from the city: Hyderabad<br/><br/>
     <c:forEach var="studentVar" items="${studentList}">
         <c:if test="${studentVar.city.contentEquals('hyd')}">
@@ -59,6 +63,23 @@
             ${studentVar.lastName}
         </c:if>
         <br/>
+    </c:forEach>
+
+    <!-- practice choose condition -->
+    <c:forEach var="studentVar" items="${studentList}">
+        <c:choose>
+            <c:when test="${studentVar.city.contentEquals('hyd')}">
+                Students from Hyd:<br/>
+                ${studentVar.firstName}, ${studentVar.lastName}<br/>
+            </c:when>
+            <c:when test="${studentVar.city.contentEquals('us')}">
+                Students from us:<br/>
+                ${studentVar.firstName}, ${studentVar.lastName}<br/>
+            </c:when>
+            <c:otherwise>
+                Students from lololol
+            </c:otherwise>
+        </c:choose>
     </c:forEach>
 </body>
 </html>
