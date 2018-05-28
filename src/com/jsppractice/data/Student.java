@@ -1,4 +1,4 @@
-package com.jsppractice;
+package com.jsppractice.data;
 
 public class Student {
     private String firstName;
