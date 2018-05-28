@@ -31,6 +31,15 @@
 * JSTL tags
 * Custom tags
 * Every page that uses tags should include the link to uri even for an include page
+* Core tags
+    * for-each
+    * if
+        * else (test = "not ${}") 
+    * choose
+        * when
+        * otherwise
+    
+    
 
 #### Git flow
 * Following gitflow workflow from this [article](https://nvie.com/posts/a-successful-git-branching-model/)
