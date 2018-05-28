@@ -6,9 +6,6 @@
 #### Tomcat, JBoss or Glassfish
 * The main difference between these servers is explained here in [doc](https://stackoverflow.com/questions/3821640/what-is-the-difference-between-tomcat-jboss-and-glassfish)
 
-
- 
-
 #### Branch : JSP Fundamentals
 * How to include pages into JSP
 
@@ -46,14 +43,35 @@
 * split
 * join
     
-    
+#### Branch: i18n 
+* i18n - designing the application for various languages without changing the source code
+* locale = language + region 
+    * en_US = English(US)
+    * en_GB = English(UK)
+    * zh_CN = Chinese(Simplified)
+* Another way to look at the differences is
+    * Change in date format
+    * Change in currencies 
+* Functions
+    * Setting Locale
+    * Messaging
+    * Number and Date Formatting
+* Steps
+    * Create a resource file with language_REGION suffix
+    * Create JSP pages with labels
+    * Setting locale based on user selection
+* i18n and L10N are bit easier using spring mvc I guess. And probably by using Google API translate. Haven't tried it yet. [link](https://medium.com/i18n-and-l10n-resources-for-developers/quick-introduction-to-internationalization-for-spring-mvc-b4b8c7ed0507)
 
 #### Git flow
 * Following gitflow workflow from this [article](https://nvie.com/posts/a-successful-git-branching-model/)
 
-#### IntelliJ Hacks
+#### Issues faced in this project
 * [How to add external jar files to the project](https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project)
     * Just copy-paste the .jar under the libs folder, right click on it and select 'Add as library' option from the list. It will do the rest.
+* Auto-format in intelliJ for jsp files is all out of sync and not pretty
+    * Solved through [this](https://stackoverflow.com/questions/34710762/intellij-jsp-formatting?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa) 
+* How to write comments in properties file
+    * Using # single comments. [Link](https://stackoverflow.com/questions/4156600/can-we-have-multiline-comments-in-a-java-properties-file)
 
 #### Tutorials
 * Architecture overview for Java EE 8 applications [here](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)

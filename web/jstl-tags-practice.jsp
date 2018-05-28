@@ -1,4 +1,4 @@
-<%@ page import="com.jsppractice.Student" %>
+<%@ page import="com.jsppractice.data.Student" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core_1_1" %>
