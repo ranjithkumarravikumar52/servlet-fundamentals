@@ -75,6 +75,8 @@
 * How to view quick inline documentation
     * Using Ctrl + Q and mouse hover [link](https://stackoverflow.com/questions/11053144/how-to-see-javadoc-in-intellij-idea) 
 * Be careful in naming the properties file name. Any small typo in the name of the file will cause the application not able to read the information
+    * For instance: {mylabels._de_DE.properties => mylabels_de_DE.properties} 
+* Unable to display native font from foreign languages correctly. Possible character-encoding issue
 
 #### Tutorials
 * Architecture overview for Java EE 8 applications [here](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)
