@@ -72,6 +72,9 @@
     * Solved through [this](https://stackoverflow.com/questions/34710762/intellij-jsp-formatting?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa) 
 * How to write comments in properties file
     * Using # single comments. [Link](https://stackoverflow.com/questions/4156600/can-we-have-multiline-comments-in-a-java-properties-file)
+* How to view quick inline documentation
+    * Using Ctrl + Q and mouse hover [link](https://stackoverflow.com/questions/11053144/how-to-see-javadoc-in-intellij-idea) 
+* Be careful in naming the properties file name. Any small typo in the name of the file will cause the application not able to read the information
 
 #### Tutorials
 * Architecture overview for Java EE 8 applications [here](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)

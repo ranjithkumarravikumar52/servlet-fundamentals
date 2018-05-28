@@ -1,5 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
+    <head>
+        <jsp:include page="char-encoding-UTF-8.jsp"/>
+    </head>
     <body>
         <jsp:include page="my-header.html"/>
 
