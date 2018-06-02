@@ -66,6 +66,11 @@
 * Basic annotations for naming and urlpatterns for servlets
 * Difference between get and post methods
 * Difference between servlet and jsp
+    * Use both
+    * servlets - business logic
+    * jsp - presentation
+    * motivation to MVC
+* How to send data from jsp-servlet, servlet-jsp, servlet-servlet and jsp-jsp
 
 ### Reading servlet parameters from web.xml
 * Write information about servlet parameters in web.xml
