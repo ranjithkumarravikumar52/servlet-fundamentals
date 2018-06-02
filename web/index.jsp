@@ -61,6 +61,13 @@
                 ${studentIndex}
             </c:forEach>
         </div>
+        <div align="center">
+            <h3>Reading info using request dispatcher from a model</h3>
+            <a href="/MvcModelServlet">MvcDemoServlet</a><br/>
+            <c:forEach var="studentIndex" items="${studentList}">
+                ${studentIndex}<br/>
+            </c:forEach>
+        </div>
 
 
         <jsp:include page="my-footer.jsp"/>
