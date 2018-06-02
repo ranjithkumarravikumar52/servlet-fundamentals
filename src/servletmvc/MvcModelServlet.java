@@ -32,7 +32,6 @@ public class MvcModelServlet extends HttpServlet {
         studentList.addStudents(tiffanyDoe);
 
         //set the request attribute that you wanna access at the view page
-        System.out.println(studentList.getStudentList());
         request.setAttribute("studentList", studentList.getStudentList());
 
         //create requestDispatcher to return the call to view page
