@@ -15,11 +15,14 @@ public class MvcDemoServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //Add data
+
+        //getting a call to this method -> CONTROLLER
+
+        //Add data -> MODEL
         String students[] = {"ranjith", "ravi"};
         request.setAttribute("studentsList", students);
 
-        //call to the jsp page
+        //call to the jsp page -> VIEW
         RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
 
         //forward the request to the jsp
