@@ -17,22 +17,17 @@ public class ReadServletParam extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        /*
-            Reading servlet parameters from web.xml
-            Write information about servlet parameters in web.xml
-            Use getServletContext() helper class to read and parse the information in web.xml
-            Use getInitParameters to read its values
-         */
-
+//        Reading servlet parameters from web.xml
         ServletContext context = getServletContext();
         String maxSize = context.getInitParameter("max-size");
 
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
+//        Use getInitParameters to read its values
         out.println("<html><body>");
         out.println("<p>");
-        out.println("The value of parameter "+context.getInitParameterNames()+" "+maxSize);
+        out.println("The value of parameter "+context.getInitParameterNames().nextElement()+" "+maxSize);
         out.println("</p>");
         out.println("</body></html>");
 
