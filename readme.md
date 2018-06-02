@@ -71,6 +71,7 @@
     * jsp - presentation
     * motivation to MVC
 * How to send data from jsp-servlet, servlet-jsp, servlet-servlet and jsp-jsp
+* can access a object's instance variable by directly accessing them at the jsp using . operator. No need of getObject()
 
 ### Reading servlet parameters from web.xml
 * Write information about servlet parameters in web.xml
