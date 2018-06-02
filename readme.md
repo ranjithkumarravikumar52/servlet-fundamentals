@@ -100,6 +100,7 @@
 * How to provide servlet specific init param in the web.xml?
 * How to missing java-docs? 
     * Better to use maven or gradle
+* Redeploy the app when new class is added?
 
 #### Tutorials
 * Architecture overview for Java EE 8 applications [here](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)
