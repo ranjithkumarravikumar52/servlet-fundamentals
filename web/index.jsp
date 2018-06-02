@@ -5,6 +5,8 @@
   </head>
   <body>
     <form action="/helloworld" method="get">
+        FirstName: <input type = "text" name="firstName"/>
+        LastName: <input type = "text" name="lastName"/>
       <input type = "submit" value = "submit"/>
     </form>
   </body>
