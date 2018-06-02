@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-# servlet-practice
-
-### servlet-fundamentals
-* Basic annotations for naming and urlpatterns for servlets
-* Difference between get and post methods
-* Difference between servlet and jsp
-<<<<<<< HEAD
-=======
-# JSP-servlets-JDBC practice
+# jsp-servlet-JDBC-sandbox
 
 #### .gitignore
 * Files and folder structures are added into .gitignore based on [document](https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore)
@@ -71,6 +62,17 @@
     * Setting locale based on user selection
 * i18n and L10N are bit easier using spring mvc I guess. And probably by using Google API translate. Haven't tried it yet. [link](https://medium.com/i18n-and-l10n-resources-for-developers/quick-introduction-to-internationalization-for-spring-mvc-b4b8c7ed0507)
 
+### servlet-fundamentals
+* Basic annotations for naming and urlpatterns for servlets
+* Difference between get and post methods
+* Difference between servlet and jsp
+
+### Reading servlet parameters from web.xml
+* Write information about servlet parameters in web.xml
+* Use getServletContext() helper class to read and parse the information in web.xml
+* Use getInitParameters to read its values 
+* Note: This method has a scope to all the servlets in the applications, not specific to any servlet
+
 #### Git flow
 * Following gitflow workflow from this [article](https://nvie.com/posts/a-successful-git-branching-model/)
 
@@ -86,6 +88,11 @@
 * Be careful in naming the properties file name. Any small typo in the name of the file will cause the application not able to read the information
     * For instance: {mylabels._de_DE.properties => mylabels_de_DE.properties} 
 * Unable to display native font from foreign languages correctly. Possible character-encoding issue
+* How to merge two repos?
+* How to manually add dependencies or setting up tomcat to a blank project in IntelliJ
+* What's an artifact? 
+* How to print values from an enumeration?
+* How to provide servlet specific init param in the web.xml?
 
 #### Tutorials
 * Architecture overview for Java EE 8 applications [here](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)
@@ -93,20 +100,3 @@
 
 #### Thanks and Credits
 * I have learned these tutorials from [Udemy by Chad Darby](https://www.udemy.com/jsp-tutorial/learn/v4/content). Please learn more in-depth tutorials from Chad Darby. 
->>>>>>> master-holder
-=======
-
-### Reading servlet parameters from web.xml
-* Write information about servlet parameters in web.xml
-* Use getServletContext() helper class to read and parse the information in web.xml
-* Use getInitParameters to read its values 
-* Note: This method has a scope to all the servlets in the applications, not specific to any servlet
-
-
-
-### Issues faced during the project
-* How to print values from an enumeration?
-* How to provide servlet specific init param in the web.xml?
-
-
->>>>>>> reading-servlet-parameters
