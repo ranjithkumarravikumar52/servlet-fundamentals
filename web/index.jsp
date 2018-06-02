@@ -61,6 +61,26 @@
                 ${studentIndex}
             </c:forEach>
         </div>
+        <div align="center">
+            <h3>Reading info using request dispatcher from a model</h3>
+            <a href="/MvcModelServlet">MvcDemoServlet</a><br/>
+            <%--view it as table--%>
+            <table border="1">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                </tr>
+                <c:forEach var="studentIndex" items="${studentList}">
+                    <tr>
+                        <td>${studentIndex.firstName}</td>
+                        <td>${studentIndex.lastName}</td>
+                        <td>${studentIndex.city}</td>
+                    </tr>
+
+                </c:forEach>
+            </table>
+        </div>
 
 
         <jsp:include page="my-footer.jsp"/>
