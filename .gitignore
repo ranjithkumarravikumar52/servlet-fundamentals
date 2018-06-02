@@ -4,8 +4,5 @@
 .idea/**/shelf
 out/
 .idea/
-<<<<<<< HEAD
 *.iml
-=======
-*.iml
->>>>>>> master-holder
+
