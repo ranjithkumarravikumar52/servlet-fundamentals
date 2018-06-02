@@ -5,6 +5,7 @@
 * Basic annotations for naming and urlpatterns for servlets
 * Difference between get and post methods
 * Difference between servlet and jsp
+<<<<<<< HEAD
 =======
 # JSP-servlets-JDBC practice
 
@@ -93,3 +94,19 @@
 #### Thanks and Credits
 * I have learned these tutorials from [Udemy by Chad Darby](https://www.udemy.com/jsp-tutorial/learn/v4/content). Please learn more in-depth tutorials from Chad Darby. 
 >>>>>>> master-holder
+=======
+
+### Reading servlet parameters from web.xml
+* Write information about servlet parameters in web.xml
+* Use getServletContext() helper class to read and parse the information in web.xml
+* Use getInitParameters to read its values 
+* Note: This method has a scope to all the servlets in the applications, not specific to any servlet
+
+
+
+### Issues faced during the project
+* How to print values from an enumeration?
+* How to provide servlet specific init param in the web.xml?
+
+
+>>>>>>> reading-servlet-parameters
