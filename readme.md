@@ -66,6 +66,11 @@
 * Basic annotations for naming and urlpatterns for servlets
 * Difference between get and post methods
 * Difference between servlet and jsp
+    * Use both
+    * servlets - business logic
+    * jsp - presentation
+    * motivation to MVC
+* How to send data from jsp-servlet, servlet-jsp, servlet-servlet and jsp-jsp
 
 ### Reading servlet parameters from web.xml
 * Write information about servlet parameters in web.xml
@@ -93,6 +98,9 @@
 * What's an artifact? 
 * How to print values from an enumeration?
 * How to provide servlet specific init param in the web.xml?
+* How to missing java-docs? 
+    * Better to use maven or gradle
+* Redeploy the app when new class is added?
 
 #### Tutorials
 * Architecture overview for Java EE 8 applications [here](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)

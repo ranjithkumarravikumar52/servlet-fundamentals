@@ -53,6 +53,14 @@
                 <input type="submit" value="Read Servlet Param"/>
             </form>
         </div>
+        <hr/>
+        <div align="center">
+            <h3>Reading info using request dispatcher</h3>
+            <a href="/MvcDemoServlet">MvcDemoServlet</a>
+            <c:forEach var="studentIndex" items="${studentsList}">
+                ${studentIndex}
+            </c:forEach>
+        </div>
 
 
         <jsp:include page="my-footer.jsp"/>
